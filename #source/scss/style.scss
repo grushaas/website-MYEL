@@ -1,0 +1,72 @@
+@import "reset.scss";
+
+$font-family: "Roboto", sans-serif;
+$background-color: #F1F1F1;
+
+html, body{
+    height:100%;
+}
+
+body {
+    font-family: $font-family;
+    background: $background-color;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+
+    header {
+        flex: 0 1 auto;
+    }
+
+    main {
+        flex: 1 0 auto;
+    }
+
+    footer {
+        flex: 0 0 auto;
+    }
+}
+
+.event {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background: #D8BF95;
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    .event--paragraph {
+        font-size: 14px;
+    }
+}
+
+header {
+    background: $background-color;
+}
+
+.wrapper--header {
+    margin: 0 64px 0 64px;
+}
+
+.nav {
+    margin: 25px 0 25px 0;
+    .nav--items {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .anchor:hover {
+        color:#3D3D3D;
+    }
+}
+
+// Main
+.jewerly {
+    display: flex;
+    justify-content: center;
+}
